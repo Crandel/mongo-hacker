@@ -19,7 +19,9 @@
 ## Installation
 
 ```sh
-npm install -g mongo-hacker
+make
+# replace ~/.mongorc.js file with this one
+make install
 ```
 
 ## Enhancements

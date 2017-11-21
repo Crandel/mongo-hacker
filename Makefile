@@ -25,4 +25,4 @@ clean:
 
 uninstall:
 	rm -f ~/.mongorc.js
-	-mv ~/.mongorc.js.orig ~/.mongorc.js
+	mv ~/.mongorc.js.orig ~/.mongorc.js

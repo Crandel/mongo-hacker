@@ -16,9 +16,7 @@ mongo_hacker_config = {
   indent:         2,                // number of spaces for indent
   sort_keys:      false,            // sort the keys in documents when displayed
   uuid_type:      'default',        // 'java', 'c#', 'python' or 'default'
-  banner_message: 'Mongo-Hacker ',  // banner message
-  version:        '0.0.14',         // current mongo-hacker version
-  show_banner:     true,            // show mongo-hacker version banner on startup
+  version:        '0.0.15',         // current mongo-hacker version
   windows_warning: true,            // show warning banner for windows
   force_color:     false,           // force color highlighting for Windows users
   count_deltas:    false,           // "count documents" shows deltas with previous counts
@@ -44,12 +42,12 @@ mongo_hacker_config = {
     'function':  { color: 'magenta' },
     'date':      { color: 'blue' },
     'uuid':      { color: 'cyan' },
+    'host':      { color: 'yellow' },
+    'username':  { color: 'green' },
+    'db':        { color: 'magenta' },
+    'errors':    { color: 'red', underline: true },
     'databaseNames':   { color: 'green', bright: true },
     'collectionNames': { color: 'blue',  bright: true }
   }
-}
-
-if (mongo_hacker_config['show_banner']) {
-  print(mongo_hacker_config['banner_message'] + mongo_hacker_config['version']);
 }
 
